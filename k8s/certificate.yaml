@@ -1,0 +1,12 @@
+kind: Certificate
+metadata:
+  name: azimuthanalytics-com-tls
+spec:
+  secretName: azimuthanalytics-com
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: azimuthanalytics.com
+  dnsNames:
+    - azimuthanalytics.com
+    - www.azimuthanalytics.com
